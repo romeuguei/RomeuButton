@@ -1,0 +1,56 @@
+html {
+    font-family: 'arvo', 'roboto', 'Times New Roman', Times, serif;
+    background-color: #eee;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+button {
+    font-size: 50px;
+    height: 300px;
+    width: 300px;
+    border: 10px solid #333;
+    padding: 10px 30px;
+    border-radius: 50%;
+    background-color: #880808;
+    cursor: pointer;
+    color: #eee;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+button:hover {
+    scale: 1.1;
+    transition-timing-function: ease-in;
+    transition-duration: 80ms;
+}
+
+#help {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+@media(max-width: 310px) {
+    button {
+        width: 270px;
+        height: 270px;
+        font-size: 40px;
+    }
+}
